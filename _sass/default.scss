@@ -1,0 +1,32 @@
+// Default styles goes here
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.jumbotron {
+    padding: 0;
+    border-radius: 0px;
+}
+
+body {
+    font-family: $font-stack; // todo add a var for this
+
+    nav.main {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-bottom: 1px solid #fff;
+
+        a.active {
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
