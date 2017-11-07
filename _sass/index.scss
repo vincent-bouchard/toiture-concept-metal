@@ -11,6 +11,8 @@ body.index {
             height: 500px;
             background: url('../img/cover.jpg');
             background-position: center -90px;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         figure {
