@@ -37,4 +37,6 @@ sass:
 routes:
     index: /
     about: /about/
+    works: /works/
+    products: /products/
     contact: /contact/

@@ -6,20 +6,67 @@ a:active {
     color: $text-color;
 }
 
+h1 {
+    font-size: $font-size-large;
+
+    @media only screen and (min-width: $medium-screen) {
+        font-size: $font-size-title;
+    }
+}
+
+h2 {
+    font-size: $font-size-medium;
+
+    @media only screen and (min-width: $medium-screen) {
+        font-size: $font-size-large;
+    }
+}
+
+p {
+    font-size: $font-size-small;
+
+    @media only screen and (min-width: $medium-screen) {
+        font-size: $font-size-regular;
+    }
+}
+
 .jumbotron {
     padding: 0;
     border-radius: 0px;
 }
 
 body {
-    font-family: $font-stack; // todo add a var for this
+    font-family: $font-stack;
+    font-size: $font-size-small;
+
+    @media only screen and (min-width: $medium-screen) {
+        font-size: $font-size-regular;
+    }
+
+    section {
+
+        @media only screen and (min-width: $large-screen) {
+            text-align: justify;
+            padding-left: 175px;
+            padding-right: 175px;
+        }
+    }
 
     nav.main {
+        z-index: 1;
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.75);
         border-bottom: 1px solid #fff;
+
+        @media only screen and (max-width: $x-small-screen) {
+            font-size: $font-size-x-small;
+
+            a.nav-link {
+                padding: 0.5rem 0.5rem;
+            }
+        }
 
         a.active {
             font-weight: bold;

@@ -9,6 +9,20 @@
         </li>
         <li class="nav-item">
             <a
+                    class="nav-link {% if page.url == site.routes.works %} active {% endif %}"
+                    href="{{ site.url }}{{ site.routes.works }}"
+                    title="Réalisations"
+            >Réalisations</a>
+        </li>
+        <li class="nav-item">
+            <a
+                    class="nav-link {% if page.url == site.routes.products %} active {% endif %}"
+                    href="{{ site.url }}{{ site.routes.products }}"
+                    title="Produits"
+            >Produits</a>
+        </li>
+        <li class="nav-item">
+            <a
                 class="nav-link {% if page.url == site.routes.about %} active {% endif %}"
                 href="{{ site.url }}{{ site.routes.about }}"
                 title="Contact"
