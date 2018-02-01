@@ -32,7 +32,9 @@ p {
 
 .jumbotron {
     padding: 0;
-    border-radius: 0px;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 body {
@@ -44,11 +46,26 @@ body {
     }
 
     section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media only screen and (min-width: $medium-screen) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
 
         @media only screen and (min-width: $large-screen) {
             text-align: justify;
             padding-left: 175px;
             padding-right: 175px;
+        }
+
+        ul {
+            margin-top: 15px;
+
+            li {
+                margin-top: 8px;
+            }
         }
     }
 
@@ -74,6 +91,17 @@ body {
         
         a:hover {
             text-decoration: underline;
+        }
+    }
+
+    footer {
+        margin-top: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: $font-size-x-small;
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: $font-size-small;
         }
     }
 }

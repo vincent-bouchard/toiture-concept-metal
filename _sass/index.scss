@@ -10,7 +10,6 @@ body.index {
         @media only screen and (min-width: $small-screen) {
             height: 500px;
             background: url('../img/cover.jpg');
-            background-position: center -90px;
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -31,5 +30,9 @@ body.index {
                 }
             }
         }
+    }
+
+    .roof {
+        background-color: #cee1ff;
     }
 }
