@@ -56,8 +56,6 @@ body {
 
         @media only screen and (min-width: $large-screen) {
             text-align: justify;
-            padding-left: 175px;
-            padding-right: 175px;
         }
 
         ul {
@@ -74,7 +72,7 @@ body {
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.85);
         border-bottom: 1px solid #fff;
 
         @media only screen and (max-width: $x-small-screen) {
