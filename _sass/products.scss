@@ -1,0 +1,31 @@
+body.products {
+
+    h1 {
+        margin-bottom: 45px;
+
+        @media only screen and (min-width: $medium-screen) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .products, .other-products {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 8px;
+        align-items: center;
+
+        @media only screen and (min-width: $medium-screen) {
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+
+            img {
+            max-width: 240px;
+            margin-bottom: 15px;
+
+            @media only screen and (min-width: $medium-screen) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

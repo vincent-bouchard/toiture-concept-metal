@@ -5,6 +5,8 @@
 layout: default
 title: Toiture concept métal
 section: index
+url: /
 ---
 
+{% include jumbotron.html %}
 {% include index/content.html %}

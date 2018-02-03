@@ -1,39 +1,7 @@
 body.index {
 
-    .jumbotron {
-        height: 300px;
-        background: url('../img/cover-small.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        @media only screen and (min-width: $small-screen) {
-            height: 500px;
-            background: url('../img/cover.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        figure {
-            position: relative;
-
-            img {
-                position: relative;
-                width: 125px;
-                top: 45px;
-                left: 15px;
-
-                @media only screen and (min-width: $medium-screen) {
-                    width: 325px;
-                    top: 60px;
-                    left: 45px;
-                }
-            }
-        }
-    }
-
     .roof {
-        background-color: #cee1ff;
+        background-color: $brand-color;
 
         .row {
             align-items: center;

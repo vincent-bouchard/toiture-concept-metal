@@ -45,6 +45,39 @@ body {
         font-size: $font-size-regular;
     }
 
+    .jumbotron {
+        height: 300px;
+        background: url('../img/cover-small.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media only screen and (min-width: $small-screen) {
+            height: 500px;
+            background: url('../img/cover.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center -90px;
+        }
+
+        figure {
+            position: relative;
+
+            img {
+                position: relative;
+                width: 125px;
+                top: 45px;
+                left: 15px;
+
+                @media only screen and (min-width: $medium-screen) {
+                    width: 325px;
+                    top: 60px;
+                    left: 45px;
+                }
+            }
+        }
+    }
+
     section {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -93,13 +126,25 @@ body {
     }
 
     footer {
-        margin-top: 30px;
-        padding-top: 15px;
+        padding-top: 30px;
         padding-bottom: 15px;
         font-size: $font-size-x-small;
 
         @media only screen and (min-width: $medium-screen) {
+            padding-top: 60px;
             font-size: $font-size-small;
+        }
+
+        .contacts {
+            margin-bottom: 30px;
+
+            a {
+                color: $brand-color;
+
+                &:hover, &:active {
+                    color: darken($brand-color, 50%);
+                }
+            }
         }
     }
 }

@@ -3,30 +3,26 @@
         <li class="nav-item">
             <a
                 class="nav-link {% if page.url == site.routes.index %} active {% endif %}"
-                href="{{ site.url }}{{ site.routes.index }}"
+                href="{{ site.routes.index }}"
                 title="Accueil"
             >Accueil</a>
         </li>
         <li class="nav-item">
             <a
-                    class="nav-link {% if page.url == site.routes.works %} active {% endif %}"
-                    href="{{ site.url }}{{ site.routes.works }}"
-                    title="Réalisations"
+                class="nav-link {% if page.url == site.routes.realizations %} active {% endif %}"
+                href="{{ "/realizations" | relative_url }}"
+                title="Réalisations"
             >Réalisations</a>
         </li>
         <li class="nav-item">
             <a
-                    class="nav-link {% if page.url == site.routes.products %} active {% endif %}"
-                    href="{{ site.url }}{{ site.routes.products }}"
-                    title="Produits"
+                class="nav-link {% if page.url == site.routes.products %} active {% endif %}"
+                href="{{ "/products" | relative_url }}"
+                title="Produits"
             >Produits</a>
         </li>
         <li class="nav-item">
-            <a
-                class="nav-link {% if page.url == site.routes.about %} active {% endif %}"
-                href="{{ site.url }}{{ site.routes.about }}"
-                title="Contact"
-            >Contact</a>
+        <!--TODO mettre un dropdown avec les infos contact-->
         </li>
     </ul>
 
