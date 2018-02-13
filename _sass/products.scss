@@ -20,10 +20,11 @@ body.products {
         }
 
             img {
-            max-width: 240px;
+            max-width: 160px;
             margin-bottom: 15px;
 
             @media only screen and (min-width: $medium-screen) {
+                max-width: 200px;
                 margin-bottom: 0;
             }
         }
