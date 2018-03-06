@@ -1,16 +1,9 @@
 ---
 layout: default
-title: Realizations
+title: Realisations
 permalink: /realizations/
 section: realizations
 ---
 
 {% include jumbotron.html %}
-
-<section class="container">
-<h1>Réalisations</h1>
-
-<p>
-Photos des réalisations à venir.
-</p>
-</section>
+{% include realizations/content.html %}
