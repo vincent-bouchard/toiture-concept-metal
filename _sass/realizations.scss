@@ -1,0 +1,33 @@
+body.realizations {
+
+    .realization1, .realization2, .realization3 {
+        height: 300px;
+        background: url('../img/realizations/realization1-small.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media only screen and (min-width: $small-screen) {
+            height: 700px;
+            background: url('../img/realizations/realization1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .realization2 {
+        background: url('../img/realizations/realization2-small.jpg');
+
+        @media only screen and (min-width: $small-screen) {
+            background: url('../img/realizations/realization2.jpg');
+        }
+    }
+
+    .realization3 {
+        background: url('../img/realizations/realization3-small.jpg');
+
+        @media only screen and (min-width: $small-screen) {
+            background: url('../img/realizations/realization3.jpg');
+        }
+    }
+}
